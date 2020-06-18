@@ -1,0 +1,66 @@
+h1{
+    font-size: 80px;
+    color: blue;
+    text-align: center;
+    
+}
+img{
+    max-width: 250px;
+    max-height: 250px;
+    
+  
+   
+   
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: blueviolet;
+
+}
+#app{
+    
+    overflow: hidden;
+    margin: auto;
+}
+
+
+#app>div>div{
+    display: flex;
+}
+#app>div img{ 
+
+     animation-name: slide;
+     animation-duration:10s;
+     animation-iteration-count: infinite;
+    }
+    @keyframes slide{
+        
+        15%{
+          transform:translateX(0px);
+        }
+        30%{
+            transform:translateX(-250px);
+        }
+        45%{
+            transform:translateX(-500px);
+        }
+        60%{
+            transform:translateX(-750px);
+        }
+        75%{
+            transform:translateX(-1000px);
+        }
+        100%{
+            transform:translateX(0px);
+        } 
+      }
+      .app img{width: 100%; max-height: 250px;}
+
+.app img{position: absolute;right: 10%;top: 6%;}
+
+
+.app img {left:0;transition: left 1s;}
+
+.app img {left:100%;transition: left 1s;}
+      
